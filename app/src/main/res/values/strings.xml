@@ -11,7 +11,7 @@
     <string name="not_connected">Você não está conectado a um dispositivo</string>
     <string name="bt_not_enabled_leaving">Bluetooth não habilitado, saindo do chat.          </string>
     <string name="title_connecting">Conectando</string>
-    <string name="title_connected_to">connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_connected_to">Conectado a <xliff:g id="device_name">%1$s</xliff:g></string>
     <string name="title_not_connected">Não conectado</string>
 
     <!--  DeviceListActivity -->
@@ -28,23 +28,23 @@
     <string name="insecure_connect">Conectar a um dispositivo - Não seguro</string>
     <string name="discoverable">Ficar visível</string>
 
-    <string name="app_name_http">Socket.IO Chat Demo</string>
-    <string name="action_leave">Leave</string>
-    <string name="action_send">Send</string>
-    <string name="prompt_message">Message</string>
+    <string name="app_name_http">Collegium</string>
+    <string name="action_leave">Sair</string>
+    <string name="action_send">Enviar</string>
+    <string name="prompt_message">Escreva aqui...</string>
 
-    <string name="connect">Connected</string>
-    <string name="disconnect">Disconnected, Please check your internet connection</string>
-    <string name="error_connect">Failed to connect</string>
+    <string name="connect">Conectado</string>
+    <string name="disconnect">Desconectado, verifique sua rede</string>
+    <string name="error_connect">Falha ao conectar</string>
 
     <!-- messages -->
-    <string name="message_welcome">Welcome to Socket.IO Chat –</string>
+    <string name="message_welcome">Bem vindo ao Collegium Chat –</string>
     <plurals name="message_participants">
-        <item quantity="one">there\'s %d participant</item>
-        <item quantity="other">there are %d participants</item>
+        <item quantity="one">Há %d participante</item>
+        <item quantity="other">Há %d participantes</item>
     </plurals>
-    <string name="message_user_joined">%s joined</string>
-    <string name="message_user_left">%s left</string>
-    <string name="user_action_typing">is typing</string>
+    <string name="message_user_joined">%s entrou</string>
+    <string name="message_user_left">%s saiu</string>
+    <string name="user_action_typing">Escrevendo</string>
 
 </resources>

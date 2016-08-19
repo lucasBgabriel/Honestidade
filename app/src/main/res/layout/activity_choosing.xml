@@ -10,8 +10,10 @@
     tools:context="com.github.nkzawa.socketio.androidchat.ChoosingActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/linearLayout">
 
 
 
@@ -28,5 +30,12 @@
             android:text="@string/bluetooth" />
 
     </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo"
+            android:layout_centerVertical="true"/>
 
 </RelativeLayout>
