@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="app_name">Socket.IO Chat Demo</string>
+    <!-- Choose app  -->
+    <string name="bluetooth">Bluetooth</string>
+    <string name="http">HTTP</string>
+
+
+    <!--  BluetoothChat -->
+    <string name="send">Enviar</string>
+    <string name="not_connected">Você não está conectado a um dispositivo</string>
+    <string name="bt_not_enabled_leaving">Bluetooth não habilitado, saindo do chat.          </string>
+    <string name="title_connecting">Conectando</string>
+    <string name="title_connected_to">connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">Não conectado</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">Buscando dispositivos</string>
+    <string name="select_device">Escolher um dispositivo para se conectar</string>
+    <string name="none_paired">Nenhum dispositivo pareado</string>
+    <string name="none_found">Nenhum dispositivo encontrado</string>
+    <string name="title_paired_devices">Dispositivos pareados</string>
+    <string name="title_other_devices">Outro dispositivos disponíveis</string>
+    <string name="button_scan">Buscar dispositivos</string>
+
+    <!-- Options Menu -->
+    <string name="secure_connect">Conectar-se a um dispositivo - seguro</string>
+    <string name="insecure_connect">Conectar a um dispositivo - Não seguro</string>
+    <string name="discoverable">Ficar visível</string>
+
+    <string name="app_name_http">Socket.IO Chat Demo</string>
     <string name="action_leave">Leave</string>
     <string name="action_send">Send</string>
     <string name="prompt_message">Message</string>
