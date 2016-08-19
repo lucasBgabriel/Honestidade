@@ -60,6 +60,9 @@ public class BluetoothChatFragment extends Fragment {
     private ListView mConversationView;
     private EditText mOutEditText;
     private Button mSendButton;
+    private Button mSecureConncetButton;
+    private Button mInsecureConncetButton;
+    private Button mVisibleButton;
 
     /**
      * Name of the connected device
@@ -151,6 +154,9 @@ public class BluetoothChatFragment extends Fragment {
         mConversationView = (ListView) view.findViewById(R.id.in);
         mOutEditText = (EditText) view.findViewById(R.id.edit_text_out);
         mSendButton = (Button) view.findViewById(R.id.button_send);
+        mSecureConncetButton = (Button) view.findViewById(R.id.conectars);
+        mInsecureConncetButton = (Button) view.findViewById(R.id.conectari);
+        mVisibleButton = (Button) view.findViewById(R.id.visivel);
     }
 
     /**
@@ -177,6 +183,27 @@ public class BluetoothChatFragment extends Fragment {
                     String message = textView.getText().toString();
                     sendMessage(message);
                 }
+            }
+        });
+
+        mSecureConncetButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Launch the DeviceListActivity to see devices and do scan
+                Intent serverIntent = new Intent(getActivity(), DeviceListActivity.class);
+                startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE_SECURE);
+            }
+        });
+
+        mInsecureConncetButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent serverIntent = new Intent(getActivity(), DeviceListActivity.class);
+                startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE_INSECURE);
+            }
+        });
+
+        mVisibleButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                ensureDiscoverable();
             }
         });
 

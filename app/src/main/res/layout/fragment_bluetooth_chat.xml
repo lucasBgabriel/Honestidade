@@ -19,6 +19,28 @@
               android:layout_height="match_parent"
               android:orientation="vertical" >
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conectar (Seguro)"
+            android:id="@+id/conectars"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conectar (Inseguro)"
+            android:id="@+id/conectari"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ficar Visível"
+            android:id="@+id/visivel"/>
+    </LinearLayout>
     <ListView
         android:id="@+id/in"
         android:layout_width="match_parent"
